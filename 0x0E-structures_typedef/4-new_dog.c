@@ -15,7 +15,7 @@ i = 0;
 
 while (s[i] != '\0')
 {
-    i++;
+i++;
 }
 
 return (i);
@@ -38,12 +38,12 @@ len = 0;
 
 while (src[len] != '\0')
 {
-    len++;
+len++;
 }
 
 for (i = 0; i < len; i++)
 {
-    dest[i] = src[i];
+dest[i] = src[i];
 }
 dest[i] = '\0';
 
@@ -68,20 +68,20 @@ len2 = _strlen(owner);
 
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
-    return (NULL);
+return (NULL);
 
 dog->name = malloc(sizeof(char) * (len1 + 1));
 if (dog->name == NULL)
 {
-    free(dog);
-    return (NULL);
+free(dog);
+return (NULL);
 }
 dog->owner = malloc(sizeof(char) * (len2 + 1));
 if (dog->owner == NULL)
 {
-    free(dog);
-    free(dog->name);
-    return (NULL);
+free(dog);
+free(dog->name);
+return (NULL);
 }
 _strcpy(dog->name, name);
 _strcpy(dog->owner, owner);
