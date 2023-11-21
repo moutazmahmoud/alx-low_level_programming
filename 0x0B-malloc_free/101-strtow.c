@@ -5,7 +5,7 @@
  *   * @s: string to evaluate
  *    *
  *     * Return: number of words
- *      */
+ **/
 int count_word(char *s)
 {
 int flag, c, w;
@@ -64,7 +64,7 @@ c = 0;
 }
 }
 else if (c++ == 0)
-        start = i;
+start = i;
 }
 matrix[k] = NULL;
 return (matrix);
